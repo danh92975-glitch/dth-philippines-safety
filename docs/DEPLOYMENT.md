@@ -2,11 +2,14 @@
 
 Production được phục vụ **duy nhất bằng GitHub Pages** thông qua GitHub Actions. Không dùng Vercel hay nhà cung cấp khác.
 
-- Repository: `dth-philippines-safety`
+- GitHub account: `htkno1`
+- Repository: `htkno1/dth-philippines-safety` → https://github.com/htkno1/dth-philippines-safety
 - Branch production: `main`
 - Source: **GitHub Actions** (Settings → Pages → Build and deployment → Source: GitHub Actions)
 - Workflow: `.github/workflows/deploy.yml`
-- URL: `https://USERNAME.github.io/dth-philippines-safety/`
+- URL: https://htkno1.github.io/dth-philippines-safety/
+
+Pages đã được khởi tạo cho repository này qua API với `build_type: workflow`; `GET /repos/htkno1/dth-philippines-safety/pages` trả về `200`. Không dùng `enablement: true` trong workflow vì input đó cần token khác `GITHUB_TOKEN`. Nếu Pages bị tắt trong tương lai, bật lại tại https://github.com/htkno1/dth-philippines-safety/settings/pages → Source = **GitHub Actions** (không chọn “Deploy from a branch”).
 
 > `dth.vercel.app` thuộc namespace của Vercel và **không thể** gán cho GitHub Pages. Không dùng tên miền này. Nếu sau này có tên miền riêng, có thể thêm qua Settings → Pages → Custom domain và cấu hình DNS CNAME/A record tại nhà đăng ký domain (không thực hiện tự động ở đây).
 
@@ -24,8 +27,8 @@ Quyền của workflow: `contents: read`, `pages: write`, `id-token: write`. Có
 ## Kiểm tra deployment
 
 ```powershell
-gh run list --workflow "Deploy DTH to GitHub Pages" --limit 5
-gh run view --log
+gh run list --repo htkno1/dth-philippines-safety --workflow "Deploy DTH to GitHub Pages" --limit 5
+gh run view --repo htkno1/dth-philippines-safety --log
 ```
 
 Hoặc xem tab **Actions** trên GitHub. URL deployment thực tế nằm ở output `page_url` của bước `Deploy to GitHub Pages`.
@@ -33,9 +36,9 @@ Hoặc xem tab **Actions** trên GitHub. URL deployment thực tế nằm ở ou
 Sau mỗi deploy, kiểm tra bằng HTTP:
 
 ```powershell
-curl.exe -I https://USERNAME.github.io/dth-philippines-safety/
-curl.exe -I https://USERNAME.github.io/dth-philippines-safety/assets/data/locations.json
-curl.exe -I https://USERNAME.github.io/dth-philippines-safety/sw.js
+curl.exe -I https://htkno1.github.io/dth-philippines-safety/
+curl.exe -I https://htkno1.github.io/dth-philippines-safety/assets/data/locations.json
+curl.exe -I https://htkno1.github.io/dth-philippines-safety/sw.js
 ```
 
 Tất cả phải trả về `200`. Không tuyên bố deploy thành công nếu chưa kiểm tra các URL này.

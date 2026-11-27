@@ -2,7 +2,7 @@
 
 Website cá nhân cho sinh viên FPTU (AI) thực tập 8 tuần tại FPT Software Philippines, Metro Manila. Static web app, ưu tiên điện thoại, dark mode mặc định, không API key trả phí, không gửi dữ liệu cá nhân đi đâu.
 
-**Production hosting: GitHub Pages (duy nhất).** URL công khai có dạng `https://USERNAME.github.io/dth-philippines-safety/`.
+**Production hosting: GitHub Pages (duy nhất).** URL công khai: https://htkno1.github.io/dth-philippines-safety/ — repository: https://github.com/htkno1/dth-philippines-safety.
 
 ## Cấu trúc
 
