@@ -1,0 +1,61 @@
+{
+  "dataDate": "2026-11-27",
+  "sections": [
+    {
+      "title":"1. Tránh rắc rối ngay từ đầu","verified":true,"verifiedDate":"2026-11-27",
+      "items":[
+        "Tuân thủ điều kiện visa và mục đích nhập cảnh đã khai báo.",
+        "Xác minh giấy tờ cho chương trình OJT với FPTU trước khi bay (thư tiếp nhận, thời hạn, địa điểm).",
+        "Không làm thêm công việc ngoài phạm vi được chương trình và pháp luật cho phép. DOLE quy định người nước ngoài làm việc tại Philippines cần giấy phép lao động (AEP) trừ khi có quy định/rule áp dụng riêng — không tự giả định được miễn.",
+        "Không mang theo vật phẩm bị cấm; không tham gia hoạt động trái pháp luật.",
+        "Không tham gia biểu tình/tụ tập chính trị: FCDO ghi nhận Bureau of Immigration đã cảnh báo người nước ngoài và có thể tạm giữ/trục xuất.",
+        "Không chụp ảnh công trình/khu vực có biển cấm; tuân thủ biển báo và hướng dẫn tại sảnh công ty, ga tàu, mall.",
+        "Luôn mang theo bản sao giấy tờ (ảnh trên điện thoại + bản giấy) và lưu số FPTU, FPT Software, WCC, Đại sứ quán Việt Nam."
+      ],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+      "title":"2. Khi cảnh sát hỏi thông tin","verified":true,"verifiedDate":"2026-11-27",
+      "items":[
+        "Giữ thái độ lịch sự, bình tĩnh; không tranh cãi, xúc phạm hay chống đối.",
+        "Có thể hỏi rõ lý do yêu cầu kiểm tra và xưng tên/đơn vị công tác để xác minh, nhưng vẫn hợp tác với yêu cầu hợp pháp. FCDO lưu ý bạn phải xuất trình giấy tờ nhận dạng khi cảnh sát yêu cầu; nên mang bản photo trang hộ chiếu nếu cất hộ chiếu an toàn ở nơi khác.",
+        "Không đưa tiền không chính thức. Mọi khoản phạt phải có biên lai/chứng từ chính thức.",
+        "Không ký văn bản bạn chưa hiểu; yêu cầu giải thích và hỗ trợ phiên dịch phù hợp trước khi ký.",
+        "Nếu bị giữ để thẩm vấn (custodial investigation): Hiến pháp Philippines Điều III, khoản 12(2) ghi nhận quyền giữ im lặng và quyền có luật sư độc lập, được chỉ định nếu bạn không có khả năng thuê.",
+        "Hiến pháp Điều III, khoản 13 cấm tra tấn/đe dọa và nghiêm cấm giam giữ bí mật; khoản 14 ghi nhận nguyên tắc suy đoán vô tội; khoản 17 cấm ép buộc tự buộc tội.",
+        "Philippines và Việt Nam đều là thành viên Công ước Vienna về quan hệ lãnh sự (Điều 36 về liên lạc/ thông báo lãnh sự). Nếu bị giữ, yêu cầu được liên hệ Đại sứ quán Việt Nam theo thủ tục áp dụng.",
+        "Không tự đưa ra kết luận pháp lý hay chấp nhận 'giải quyết tại chỗ' không có giấy tờ. Gọi ngay người phụ trách FPTU/FPT Software và Đại sứ quán để được hỗ trợ."
+      ],
+      "source":"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353"
+    },
+    {
+      "title":"3. Nhập cảnh, lưu trú & thực tập","verified":false,"verifiedDate":"2026-11-27",
+      "items":[
+        "Visa và thời hạn lưu trú: kiểm tra loại visa thực tế được cấp trước khi bay; không giả định quy định visa-waiver áp dụng cho quốc tịch Việt Nam (cần xác nhận với Bureau of Immigration hoặc Đại sứ quán).",
+        "Làm việc/thực tập: DOLE nêu người nước ngoài và sử dụng lao động cần có giấy phép (AEP) theo Điều 40 Bộ luật Lao động Philippines, trừ trường hợp luật/quy định riêng có hiệu lực.",
+        "CHƯA xác minh: không tìm thấy văn bản chính thức xác nhận OJT/thực tập sinh được miễn AEP/SWP/PWP. Phải có xác nhận bằng văn bản từ FPTU/FPT Software hoặc DOLE/BI trước khi làm việc.",
+        "Gia hạn lưu trú nếu ở lại quá thời hạn visa: thực hiện theo hướng dẫn trực tiếp của Bureau of Immigration; không nghe tư vấn từ mạng xã hội.",
+        "Lưu địa chỉ ký túc và địa chỉ công ty để khai báo khi được yêu cầu; cập nhật cho FPTU nếu thay đổi chỗ ở."
+      ],
+      "source":"https://ncr.dole.gov.ph/alien-employment-permit/"
+    },
+    {
+      "title":"4. Dữ liệu cá nhân trên website này","verified":true,"verifiedDate":"2026-11-27",
+      "items":[
+        "Không nhập số hộ chiếu, mật khẩu, mã OTP hay thông tin ngân hàng vào website.",
+        "Checklist và ngân sách chỉ lưu bằng localStorage trên thiết bị của bạn; không gửi đến server.",
+        "Vị trí chỉ được hỏi sau khi bạn bấm nút và chỉ vẽ trên bản đồ của bạn.",
+        "Bản deploy là công khai. Nếu cần khu vực riêng, dùng xác thực phía server (xem DEPLOYMENT.md)."
+      ],
+      "source":"https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+    }
+  ],
+  "sources": [
+    {"label":"Hiến pháp Philippines 1987, Điều III (Supreme Court E-Library)","url":"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353"},
+    {"label":"UN Treaty Collection – Vienna Convention on Consular Relations","url":"https://treaties.un.org/pages/viewdetails.aspx?src=treaty&mtdsg_no=iii-6&chapter=3"},
+    {"label":"DOLE NCR – Alien Employment Permit","url":"https://ncr.dole.gov.ph/alien-employment-permit/"},
+    {"label":"Bureau of Immigration – Visa Waiver (kiểm tra theo quốc tịch)","url":"https://immigration.gov.ph/visas/visa-waiver/"},
+    {"label":"UK FCDO – Philippines safety and security (cảnh báo biểu tình, giấy tờ)","url":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"},
+    {"label":"FPTU – Thông báo OJT Philippines Fall 2026","url":"https://daihoc.fpt.edu.vn/en/hm/officially-install-it-in-the-philippines-in-fall-2026/"}
+  ]
+}

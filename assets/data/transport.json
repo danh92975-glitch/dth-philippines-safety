@@ -1,0 +1,120 @@
+{
+  "dataDate": "2026-11-27",
+  "statusNote": "Tuyến chính đã đối chiếu LRTA, DOTr-MRT3 và nguồn chính thức của FPT/WCC. Điểm CHƯA xác minh: cổng ký túc xá WCC và số cửa ra gần nhất tại ga Ayala. Giá vé có thể thay đổi — kiểm tra bảng dán tại ga trước khi đi.",
+  "anchors": {
+    "wcc": {
+      "name": "WCC – Ký túc xá sinh viên",
+      "short": "WCC",
+      "category": "accommodation",
+      "address": "Aurora Boulevard, Quirino 3-A, Project 3, Quezon City. Trang WCC ghi địa chỉ campus là 960 Aurora Blvd, Quezon City; ký túc xá được mô tả là 'vài bước chân từ campus' nhưng KHÔNG công bố địa chỉ/cổng riêng.",
+      "lat": 14.6272114,
+      "lng": 121.0633582,
+      "verified": false,
+      "verifiedDate": "2026-11-27",
+      "source": "https://www.worldciti.edu.ph/facilities/student-dormitory",
+      "note": "Tọa độ là campus theo OSM (way 120115733), KHÔNG phải tọa độ cổng ký túc đã xác minh. Liên hệ WCC (02) 3-438-4580 / 0917-596-8545 để hỏi đúng cổng vào."
+    },
+    "fpt": {
+      "name": "FPT Software Philippines – Manila Office",
+      "short": "FPT",
+      "category": "workplace",
+      "address": "Suite A, Level 14, Robinsons Summit Center, 6783 Ayala Avenue, Makati City 1226",
+      "lat": 14.5575334,
+      "lng": 121.0206534,
+      "verified": true,
+      "verifiedDate": "2026-11-27",
+      "source": "https://fptsoftware.com/about-us/global-presence",
+      "note": "Tọa độ lấy từ link Google Maps trên trang chính thức FPT. Văn phòng +63 32 410 6857 (58), vudta@fpt.com. FPTU OJT: 0901 377 317 / thuvh3@fe.edu.vn (thông báo 18/08/2026)."
+    }
+  },
+  "steps": [
+    {
+      "title": "1. WCC → ga LRT-2 Anonas",
+      "detail": "Đi bộ từ khu ký túc/campus về hướng Aurora Boulevard đến ga Anonas. WCC công bố campus nằm trong khoảng đi bộ tới LRT-2 Anonas; quãng đường thực tế từ CỔNG KÝ TÚC chưa được xác minh — hãy hỏi bảo vệ WCC trong ngày đầu.",
+      "meta": ["Đi bộ", "Ga LRT-2 Anonas", "Cổng ký túc: cần xác nhận"],
+      "source": "https://www.facebook.com/WorldCitiCollegesQuezonCity/videos/1424596989065559/",
+      "verifiedDate": "2026-11-27"
+    },
+    {
+      "title": "2. Anonas → Araneta Center–Cubao (LRT-2)",
+      "detail": "Vào ga Anonas, đi tàu LRT-2 chiều TÂY (hướng Recto), xuống tại ga Araneta Center–Cubao. Không nhầm với ga Betty Go-Belmonte (phía tây xa hơn).",
+      "meta": ["LRT-2", "Chiều: westbound / Recto", "Ga đến: Araneta Center–Cubao", "₱7,50 với thẻ Beep xanh"],
+      "source": "https://www.lrta.gov.ph/tickets-and-fares/",
+      "verifiedDate": "2026-11-27"
+    },
+    {
+      "title": "3. Chuyển tuyến tại Cubao",
+      "detail": "Ra khỏi cổng LRT-2 rồi đi bộ sang ga MRT-3 Araneta-Cubao (hai ga riêng biệt). Không tìm thấy quy định chuyển tuyến miễn phí chính thức; nguồn độc lập cho biết việc chuyển tuyến ở Metro Manila thường phải trả lại vé. Hãy tính ngân sách là 2 lần vé.",
+      "meta": ["Đi bộ giữa 2 ga", "Trả vé lần 2", "Không có through-fare đã xác minh"],
+      "source": "https://www.lrta.gov.ph/tickets-and-fares/",
+      "verifiedDate": "2026-11-27"
+    },
+    {
+      "title": "4. Cubao → Ayala (MRT-3)",
+      "detail": "Vào ga MRT-3 Araneta-Cubao, đi tàu chiều NAM (hướng Taft Avenue), xuống ga Ayala. Ga Ayala nằm cạnh One Ayala/SM Makati theo OSM.",
+      "meta": ["MRT-3", "Chiều: southbound / Taft Avenue", "Ga đến: Ayala", "₱10 với thẻ Beep"],
+      "source": "https://www.dotrmrt3.gov.ph/discounted-fare-matrix.pdf",
+      "verifiedDate": "2026-11-27"
+    },
+    {
+      "title": "5. Ayala → văn phòng FPT Software",
+      "detail": "Từ ga Ayala đi bộ theo chỉ dẫn ra Ayala Avenue / One Ayala rồi đi về hướng Paseo de Roxas tới số 6783. KHÔNG có số cửa ra chính thức được xác minh. Ước tính quãng bộ của bên thứ ba dao động 1,0–1,6 km — hãy mở Google Maps ngay tại ga để chọn hướng phù hợp.",
+      "meta": ["Đi bộ", "Đích: Robinsons Summit Center", "Cửa ra: chưa xác minh"],
+      "source": "https://fptsoftware.com/about-us/global-presence",
+      "verifiedDate": "2026-11-27"
+    },
+    {
+      "title": "6. Giờ tàu & phương án về muộn",
+      "detail": "LRT-2 mở cửa 04:50 hàng ngày; chuyến westbound cuối từ Anonas khoảng 21:05. MRT-3 ngày thường từ Araneta-Cubao chiều southbound mở 04:27, chuyến cuối 22:38; cuối tuần chuyến cuối từ Araneta-Cubao 21:38. Nếu về sau 21:00, dùng Grab/taxi thay vì tàu.",
+      "meta": ["LRT-2: 04:50–21:05 (Anonas westbound)", "MRT-3: 04:27–22:38 (ngày thường)", "Sau 21:00: Grab/taxi"],
+      "source": "https://www.lrta.gov.ph/train-operating-schedule/",
+      "verifiedDate": "2026-11-27"
+    }
+  ],
+  "fares": {
+    "lrt2": "₱7,50 / lượt (thẻ Beep xanh) hoặc ₱10 (SJT) — Anonas → Cubao",
+    "mrt3": "₱10 / lượt — Cubao → Ayala (ma trận giảm giá; giá thường ₱20)",
+    "discount": "Giảm 50% cho TẤT CẢ hành khách LRT-2 & MRT-3 từ 23/03/2026 theo LRTA/DOTr (không phải đặc quyền riêng của sinh viên).",
+    "beepCard": "Thẻ Beep thường ₱30 + nạp tối thiểu ₱14; chấp nhận ở LRT-1/2/3",
+    "foreignStudent": "Sinh viên nước ngoài KHÔNG tự động đủ điều kiện thẻ concessionary màu trắng (Beep FAQ: chỉ công dân Philippines). Vẫn dùng được giá giảm 50% hiện hành như hành khách thường.",
+    "source": "https://www.lrta.gov.ph/tickets-and-fares/",
+    "verifiedDate": "2026-11-27"
+  },
+  "calculation": {
+    "oneWay": "₱17,50",
+    "daily": "₱35,00",
+    "total40": "₱1.400,00",
+    "vnd": "Tự nhập tỷ giá trong tab Checklist & Budget — không dùng tỷ giá chưa kiểm chứng.",
+    "note": "₱17,50 × 2 = ₱35/ngày; × 40 ngày = ₱1.400. Nếu mua thẻ Beep mới: +₱30 (tiền nạp ₱14 không tính vào vé, vẫn còn trong thẻ). Nếu mua SJT thay vì thẻ: ₱20 chiều × 2 × 40 = ₱1.600. Thông tin 7.000 VNĐ/lượt trước đó KHÔNG khớp với giá hiện hành đã xác minh."
+  },
+  "alternatives": [
+    {
+      "mode": "Grab / taxi",
+      "title": "Phương án khi trễ tàu hoặc mưa lớn",
+      "detail": "Đặt xe trong app, đối chiếu biển số trước khi lên, yêu cầu bật meter nếu dùng taxi truyền thống. Chỉ lên xe khi mã chuyến khớp trong app.",
+      "source": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+      "mode": "Jeepney / bus",
+      "title": "Phương án chi phí thấp hơn",
+      "detail": "Có thể đi xe buýt/jeepney nhưng tuyến và giá theo từng đơn vị vận hành; FCDO cảnh báo nên cẩn trọng với hành lý và tài sản trên phương tiện công cộng đông. Không có giá vé đã xác minh cho tuyến cụ thể nên không ghi số.",
+      "source": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+      "mode": "Đi bộ đoạn cuối",
+      "title": "Từ ga Ayala về văn phòng",
+      "detail": "Đi bộ ban ngày theo Ayala Avenue; nếu tối hoặc mưa, dùng xe_app từ cổng One Ayala. Không đi theo ngõ riêng khi chưa xác minh đường.",
+      "source": "https://www.rome2rio.com/s/MRT-3-Ayala-Station-Makati-City-Manila/Robinsons-Summit-Center"
+    }
+  ],
+  "sources": [
+    {"label":"LRTA – Tickets and Fares (giảm 50% từ 23/03/2026)","url":"https://www.lrta.gov.ph/tickets-and-fares/","note":"nguồn chính thức"},
+    {"label":"LRTA – Ma trận LRT-2 sau giảm giá","url":"https://www.lrta.gov.ph/wp-content/uploads/2026/04/Discount_Matrix_OriginSVC_SJT_1.png","note":"OCR ô Anonas → Cubao = ₱7,50"},
+    {"label":"DOTr-MRT3 – Ma trận giá giảm","url":"https://www.dotrmrt3.gov.ph/discounted-fare-matrix.pdf","note":"ô Araneta-Cubao → Ayala = ₱10"},
+    {"label":"LRTA – Train Operating Schedule","url":"https://www.lrta.gov.ph/train-operating-schedule/","note":"giờ mở/đóng ga"},
+    {"label":"Beep – Concessionary Card FAQ","url":"https://beep.com.ph/faqs-for-concessionary-card","note":"người nước ngoài không dùng thẻ sinh viên"},
+    {"label":"FPT Software – Global Presence","url":"https://fptsoftware.com/about-us/global-presence","note":"địa chỉ văn phòng Makati"},
+    {"label":"FPTU – OJT Philippines Fall 2026","url":"https://daihoc.fpt.edu.vn/en/hm/officially-install-it-in-the-philippines-in-fall-2026/","note":"08/08 tuần, liên hệ chương trình"},
+    {"label":"WCC – Student Dormitory","url":"https://www.worldciti.edu.ph/facilities/student-dormitory","note":"ký túc cách campus vài bước, không có địa chỉ riêng"}
+  ]
+}

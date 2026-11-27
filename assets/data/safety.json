@@ -1,0 +1,136 @@
+{
+  "dataDate": "2026-11-27",
+  "alerts": [
+    {
+      "level":"CAUTION",
+      "title":"Cảnh báo an ninh chung (cập nhật 15/07/2026)",
+      "text":"FCDO ghi nhận tội phạm đường phố/cướp tài sản có thể kèm vũ khí tại đô thị lớn, và cảnh báo nguy cơ tấn công vào nơi công cộng từng có người nước ngoài lui tới (mall, phương tiện công cộng). Đây là cảnh báo chung toàn quốc, KHÔNG chỉ định khu phố nào ở Metro Manila là nguy hiểm.",
+      "scope":"Toàn Philippines (cập nhật 15/07/2026)",
+      "date":"2026-07-15",
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    }
+  ],
+  "alertNote": "Không đưa cảnh báo an ninh theo khu phố khi chưa có thông báo chính thức kèm ngày, phạm vi và nguồn. Kiểm tra lại travel advisory trước mỗi cuối tuần.",
+  "scenarios": [
+    {
+      "id":"pickpocketing","title":"Pickpocketing","titleVi":"Móc túi","level":"CAUTION",
+      "summary":"Mất tài sản trong đám đông mà bạn không nhận ra ngay.",
+      "signs":["Có người cố sát vào bạn ở tàu đông, chợ, lối vào ga hoặc quầy thanh toán.","Túi/quần áo bị dịch chuyển nhẹ, dây đeo bị mở.","Có người tạo sự phân tâm (hỏi đường, làm rơi đồ) ngay sát túi của bạn."],
+      "scenario":"Bạn đứng trong toa MRT-3 đông giờ tan ca, cầm điện thoại trên tay và ví trong túi quần sau. Khi xuống ga, bạn mới thấy ví mất.",
+      "prevent":["Đeo balô trước ngực ở nơi đông; khóa kéo hướng vào trong.","Chỉ mang tiền mặt vừa đủ trong ngày; giữ thẻ và giấy tờ ở túi riêng.","Không để ví ở túi quần sau khi đi tàu hoặc đi chợ.","Chuẩn bị sẵn thẻ xe/Beep trước khi tới cổng soát vé."],
+      "during":["Giữ chặt tài sản, bước sang chỗ đông người có nhân viên hoặc bảo vệ.","Nói to 'Extra! / I need help' nếu cần sự chú ý.","Không đuổi theo khi có nguy cơ bị đẩy hoặc va chạm."],
+      "contacts":["Gọi 911 nếu có hành vi cưỡng đoạt hoặc đe dọa.","Trình báo PNP qua 117 hoặc đồn cảnh sát gần nhất.","Báo ngân hàng để khóa thẻ nếu mất thẻ."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"phone-snatching","title":"Phone snatching","titleVi":"Giật điện thoại","level":"HIGH",
+      "summary":"Điện thoại bị giật khi đang cầm hoặc đặt gần mép đường.",
+      "signs":["Có người đi bộ/đạp xe sát lề đường nhìn vào điện thoại của bạn.","Bạn đứng ở mép đường, vừa đi vừa nhìn màn hình.","Xe máy chạy chậm sát người đang cầm điện thoại."],
+      "scenario":"Bạn đứng chờ Grab trước cổng tòa nhà, cầm điện thoại xem vị trí xe. Một người đi xe máy chạy qua và giật lấy máy rồi tăng tốc.",
+      "prevent":["Không dùng điện thoại sát mép đường; lùi vào trong cửa hàng hoặc sảnh.","Không vừa đi bộ vừa nhìn điện thoại liên tục.","Dùng túi đeo chéo có khóa; không để máy ở túi quần sau.","Bật Find My Device / tính năng khóa từ xa trên điện thoại từ trước."],
+      "during":["Ưu tiên an toàn, không truy đuổi người giật máy.","Di chuyển vào nơi đông người, sáng sủng ngay lập tức.","Dùng thiết bị khác để khóa tài khoản, SIM và phát hiện vị trí thiết bị."],
+      "contacts":["911 cho tình huống có đe dọa/trọng thương.","PNP 117 để trình báo; yêu cầu biên bản trình báo (police report).","Nhà mạng di động để khóa SIM; ngân hàng nếu có app banking trên máy."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"bag-snatching","title":"Bag snatching","titleVi":"Giật túi xách","level":"HIGH",
+      "summary":"Túi bị giật từ tay hoặc vai, thường xảy ra nhanh khi bạn đang đi bộ.",
+      "signs":["Dây túi vắt hẳn ra ngoài vai, không có khóa.","Có người đi sát phía sau hoặc từ bên cạnh khi bạn đi chậm.","Túi đặt trên yên xe máy hoặc tựa lưng ghế quán ăn."],
+      "scenario":"Bạn đi từ ga Ayala về văn phòng, đeo túi xách một bên vai. Khi qua ngã tư, một người đi bộ chạy lấy túi rồi hòa vào đám đông.",
+      "prevent":["Đeo túi chéo người, dây ngắn, khóa kéo hướng vào người.","Không treo túi ở ghế quán cà phê hay móc xe máy.","Không bỏ toàn bộ tài sản và giấy tờ vào một túi."],
+      "during":["Buông túi nếu bị kéo mạnh — tránh bị ngã kéo theo.","Ghi nhận hướng đi, thời gian, đặc điểm trang phục; không tự đuổi theo.","Bảo vệ đầu và cổ nếu bị kéo ngã; tìm ngay nhân viên an ninh."],
+      "contacts":["Gọi 911 nếu bị thương hoặc bị đe dọa.","Trình báo PNP 117/đồn gần nhất để có police report.","Báo ngân hàng và đại diện FPTU/FPT Software."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"taxi-scams","title":"Taxi scams","titleVi":"Lừa đảo taxi","level":"CAUTION",
+      "summary":"Cách tính tiền hoặc cung cấp dịch vụ không minh bạch.",
+      "signs":["Tài xế không bật đồng hồ, nói 'giá cố định' cao bất thường.","Xe không có biển số/màu theo quy định của taxi hợp pháp, hoặc đón khách ngay trong sân bay/sảnh khách sạn.","Đồng hồ chạy nhanh bất thường hoặc tài xế nói cần đổi xe giữa đường."],
+      "scenario":"Bạn ra đường gọi taxi từ lề đường, tài xế đồng ý chở nhưng không bật meter và đòi giá gấp 3 lần bình thường vào giờ mưa.",
+      "prevent":["Ưu tiên xe qua app có lịch sử chuyến đi và biển số hiển thị trong app.","Đối chiếu biển số xe với app trước khi lên; tự nhập mã chuyến khi được yêu cầu.","Nếu dùng taxi truyền thống, yêu cầu bật meter ngay trước khi khởi động.","Giữ hành lý và túi ở ghế sau cùng mình, không để cốp riêng."],
+      "during":["Nói rõ 'Please use the meter'. Nếu từ chối, xuống xe ở nơi an toàn.","Không trả tiền trước cho 'phí đặt xe/phí sân bay' không có hóa đơn.","Ghi lại biển số xe và mã chuyến trước khi khiếu nại."],
+      "contacts":["Hotline app ride-hailing (trong app) để khiếu nại chuyến đi.","PNP 117 nếu có hành vi cưỡng ép hoặc giữ hành lý.","Lệch giá rõ rệt: giữ hóa đơn/bằng chứng để báo FPTU."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"fake-ride-hailing","title":"Fake ride-hailing drivers","titleVi":"Tài xế giả app","level":"CAUTION",
+      "summary":"Người tự xưng là tài xế app nhưng chuyến đi không tồn tại trong hệ thống.",
+      "signs":["Người đó chủ động lại gần hỏi 'Bạn đặt Grab phải không?' trước khi bạn nhận được mã chuyến.","Biển số xe không khớp với thông tin trong app.","Yêu cầu bạn hủy chuyến trong app rồi thanh toán riêng."],
+      "scenario":"Bạn đặt xe trước cổng công ty. Một người tiến đến nói xe của anh ta đến trước, yêu cầu bạn huỷ chuyến và đi riêng để 'rẻ hơn'.",
+      "prevent":["Chỉ lên xe khi app hiện tên tài xế, biển số và mã chuyến khớp thực tế.","Không chia sẻ mã OTP của app cho tài xế.","Không huỷ chuyến trong app khi đã lên xe.", "Đợi ở sảnh/station có nhân viên, không đứng lề đường một mình."],
+      "during":["Nói bạn sẽ giữ chuyến trong app; bước lùi lại nơi đông người.","Nếu đã lên xe và cảm thấy không an toàn, yêu cầu dừng ở nơi công cộng rồi xuống.","Chụp màn hình thông tin chuyến và biển số xe."],
+      "contacts":["Hotline hỗ trợ trong app ride-hailing.","911 nếu bị đe dọa; PNP 117 nếu bị lừa tiền.", "Báo người phụ trách FPTU nếu sự việc liên quan giờ làm việc."],
+      "source":"https://travel.state.gov/en/international-travel/travel-advisories/philippines.html","sourceLabel":"US DOS – Philippines Travel Advisory","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"atm-scams","title":"ATM scams","titleVi":"Gian lận tại ATM","level":"CAUTION",
+      "summary":"Thẻ bị giữ, bị đọc dữ liệu hoặc bị nhìn mã PIN khi rút tiền.",
+      "signs":["Khe đọc thẻ có thiết bị lạ, vít lệch, hoặc khe nhựa chắp thêm.","Có người đứng quá sát hoặc cố nhìn khi bạn bấm PIN.","Sau khi nhập PIN, máy báo 'lỗi' và bảo bạn nhập lại hoặc gọi số lạ trên màn hình."],
+      "scenario":"Bạn rút tiền tại ATM trong siêu thị. Máy nuốt thẻ và hiện một số điện thoại 'hotline' dán trên máy; số này không phải số ngân hàng.",
+      "prevent":["Dùng ATM trong chi nhánh/siêu thị có bảo vệ; quan sát khe đọc thẻ trước khi dùng.","Che tay khi bấm PIN; không dùng số điện thoại dán trên máy.","Giới hạn số tiền rút mỗi lần; báo ngân hàng nếu có giao dịch lạ."],
+      "during":["Không nhập lại PIN theo hướng dẫn lạ; giữ màn hình giao dịch làm bằng chứng.","Gọi số hotline chính thức trên thẻ/ứng dụng ngân hàng, không gọi số dán trên ATM.","Nếu thẻ bị giữ, yêu cầu nhân viên chi nhánh hỗ trợ ngay tại chỗ."],
+      "contacts":["Hotline ngân hàng (số in trên thẻ/app).","PNP 117 nếu có người cố lấy thẻ/tiền.","Báo FPTU nếu liên quan tiền sinh hoạt của đoàn."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"card-scams","title":"Credit/debit card scams","titleVi":"Gian lận thẻ ngân hàng","level":"CAUTION",
+      "summary":"Thẻ bị sao chép hoặc giao dịch trái phép sau khi thanh toán.",
+      "signs":["Nhân viên đưa máy đọc thẻ ra khỏi tầm mắt bạn.","Có người đề nghị 'giữ thẻ giúp' hoặc chụp ảnh hai mặt thẻ.","App ngân hàng báo giao dịch bạn không thực hiện."],
+      "scenario":"Bạn đưa thẻ cho nhân viên cửa hàng; họ mang thẻ ra quầy khác 'xử lý'. Vài ngày sau app báo một giao dịch online lạ.",
+      "prevent":["Thanh toán ngay tại quầy có máy thanh toán trước mặt bạn.","Không chia sẻ ảnh thẻ, CVV hay mã OTP cho bất kỳ ai.","Bật thông báo giao dịch và đặt hạn mức thấp cho thẻ dùng hàng ngày."],
+      "during":["Khóa thẻ tạm thời trong app ngân hàng ngay khi nghi ngờ.","Chụp màn hình giao dịch lạ, liên hệ ngân hàng theo số chính thức.","Yêu cầu ngân hàng mở tranh chấp giao dịch theo quy trình của họ."],
+      "contacts":["Hotline ngân hàng chính thức.","PNP 117 / cybercrime hotline nếu có lừa đảo qua mạng (xác minh số trước khi gọi).","Không gửi ảnh thẻ cho người lạ, kể cả người tự xưng nhân viên ngân hàng."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"online-scams","title":"Online scams","titleVi":"Lừa đảo trực tuyến","level":"CAUTION",
+      "summary":"Tin nhắn, cuộc gọi hoặc bài đăng giả mạo nhằm chiếm tiền/thông tin.",
+      "signs":["Tin nhắn 'cần xác nhận tài khoản' kèm link lạ hoặc yêu cầu OTP.","Người lạ trong nhóm OJT nhắn riêng xin chuyển khoản 'phí đặt cọc'.","Bài đăng cho thuê phòng với giá thấp bất thường, từ chối cho xem trực tiếp."],
+      "scenario":"Bạn nhận tin nhắn tự xưng FPTU yêu cầu nộp 'phí giữ chỗ ký túc xá' qua tài khoản cá nhân, kèm link rút gọn.",
+      "prevent":["Chỉ xác nhận qua kênh chính thức đã lưu sẵn (email/SMS của FPTU, FPT Software, WCC).","Không chuyển tiền cho tài khoản cá nhân khi chưa xác minh bằng cuộc gọi đến số cũ đã biết.","Không bấm link lạ, không cung cấp OTP/mã xác thực."],
+      "during":["Ngừng liên lạc, chụp màn hình cuộc hội thoại và số tài khoản.","Liên hệ ngân hàng nếu đã chuyển tiền, theo quy trình khiếu nại của họ.","Báo người phụ trách chương trình OJT để cảnh báo các sinh viên khác."],
+      "contacts":["Ngân hàng (hotline chính thức).","PNP 117; nếu là lừa đảo mạng, vào trang chính thức của PNP Anti-Cybercrime Group để biết kênh trình báo hiện hành.","FPTU / FPT Software supervisor để xác minh danh tính người liên hệ."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"fake-police","title":"Fake police impersonation","titleVi":"Giả danh cảnh sát","level":"HIGH",
+      "summary":"Người mặc trang phục hoặc nói là cảnh sát yêu cầu bạn đưa tiền/giấy tờ ngay tại chỗ.",
+      "signs":["Người đó mặc thường phục, chỉ 'thẻ' trên tay, yêu cầu thanh toán 'phạt tại chỗ' ngay.","Từ chối cho bạn gọi đồn cảnh sát hoặc người phiên dịch.","Yêu cầu bạn đi theo đến địa điểm riêng không phải đồn/trạm chính thức."],
+      "scenario":"Ở khu vực gần ga, một người nói mình là cảnh sát, yêu cầu kiểm tra ví rồi đề nghị 'đóng phí xử lý' bằng tiền mặt để khỏi phải về đồn.",
+      "prevent":["Giữ thái độ lịch sự, hợp tác với yêu cầu kiểm tra hợp pháp.","Hỏi tên, đơn vị và số điện thoại đồn; nếu cần, gọi 117 để xác minh.","Không đưa tiền không chính thức; mọi khoản phạt phải có biên lai chính thức."],
+      "during":["Không chống đối hay bỏ chạy. Nói rõ bạn muốn xác minh qua 117 và cần người phiên dịch.","Nếu bị yêu cầu đi theo, đề nghị đến đồn/trạm có tên cụ thể hoặc nơi công cộng có camera.","Ghi nhận thời gian, địa điểm, đặc điểm và số xe (nếu có)."],
+      "contacts":["Gọi 117 để xác minh/gọi PNP; 911 nếu có đe dọa vũ lực.","Đại sứ quán Việt Nam tại Philippines nếu bạn bị giữ.","FPTU/FPT Software để được hỗ trợ liên lạc."],
+      "source":"https://ph.usembassy.gov/services","sourceLabel":"US Embassy Manila – Services ( emergency numbers and assistance)","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"overcharging","title":"Overcharging","titleVi":"Ép giá khách nước ngoài","level":"CAUTION",
+      "summary":"Bị báo giá cao hơn giá niêm yết hoặc giá thỏa thuận ban đầu.",
+      "signs":["Không có bảng giá, hoặc bảng giá khác với giá nói miệng.","Tài xế/cửa hàng đổi giá khi thấy bạn là người nước ngoài.","Hóa đơn ghi thêm 'service charge' không giải thích rõ."],
+      "scenario":"Bạn vào quán gần văn phòng, gọi món theo bảng giá nhưng hóa đơn cao hơn. Nhân viên nói đó là giá 'cho khách nước ngoài'.",
+      "prevent":["Hỏi giá và chụp bảng giá trước khi đặt món/xe.","Xác nhận tổng giá bằng tiếng Anh đơn giản: 'Is this the final price?'","Ưu tiên nơi có hóa đơn, máy thanh toán và bảng giá rõ ràng."],
+      "during":["Chỉ ra bảng giá một cách lịch sự, yêu cầu giải thích từng khoản.","Giữ hóa đơn và chụp bảng giá làm bằng chứng.","Không tranh cãi căng thẳng nếu có dấu hiệu đe dọa — rời đi và báo người phụ trách."],
+      "contacts":["Quầy thông tin của khu thương mại/mall nếu có.","PNP 117 nếu bị cưỡng ép trả tiền.","FPTU/FPT Software nếu phát sinh trong hoạt động thực tập."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security","sourceLabel":"UK FCDO – Philippines safety and security","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"fake-accommodation","title":"Fake accommodation offers","titleVi":"Lừa đảo chỗ ở","level":"CAUTION",
+      "summary":"Tin đăng nhà/trọ giả, yêu cầu đặt cọc trước khi xem nhà.",
+      "signs":["Giá thuê thấp bất thường so với khu vực, ảnh đẹp nhưng từ chối video call/xem trực tiếp.","Yêu cầu chuyển khoản 'giữ phòng' vào tài khoản cá nhân.","Người đăng không thể cung cấp hợp đồng hoặc thông tin quản lý tòa nhà."],
+      "scenario":"Bạn thấy tin 'phòng gần WCC giá rẻ', người đăng hối chuyển khoản trong 2 giờ để giữ chỗ trước khi sang Philippines.",
+      "prevent":["Chỉ làm việc với WCC/đơn vị được FPTU xác nhận cho đoàn OJT.","Xem trực tiếp/video call và xác minh hợp đồng trước khi trả tiền.","Không chuyển tiền đặt cọc cho tài khoản cá nhân chưa xác minh danh tính."],
+      "during":["Dừng giao dịch, lưu lại tin đăng và thông tin liên lạc.","Báo FPTU/WCC để kiểm tra; nếu đã mất tiền, liên hệ ngân hàng.","Không ở lại địa điểm riêng tư với người lạ khi chưa xác minh."],
+      "contacts":["WCC official: (02) 3-438-4580 / 0917-596-8545 (nguồn: trang chính thức WCC).","FPTU OJT: 0901 377 317 / thuvh3@fe.edu.vn (nguồn: thông báo OJT FPTU 18/08/2026).","PNP 117 nếu có dấu hiệu lừa đảo."],
+      "source":"https://www.worldciti.edu.ph/facilities/student-dormitory","sourceLabel":"World Citi College – Student Dormitory","verifiedDate":"2026-11-27"
+    },
+    {
+      "id":"lost-passport","title":"Lost passport and documents","titleVi":"Mất hộ chiếu / giấy tờ","level":"HIGH",
+      "summary":"Không còn giấy tờ để chứng minh danh tính và điều kiện lưu trú.",
+      "signs":["Không tìm thấy hộ chiếu sau khi kiểm tra túi, phòng và lịch trình.","Phát hiện túi/giấy tờ bị mất sau khi di chuyển bằng tàu/xe.","Cần xuất trình giấy tờ cho cơ quan chức năng nhưng không có bản gốc."],
+      "scenario":"Sau một ngày đi lại bằng tàu, bạn phát hiện hộ chiếu và thư thực tập không còn trong balô.",
+      "prevent":["Lưu ảnh bản sao hộ chiếu, visa và thư thực tập ở nơi riêng tư (không đăng công khai).","Giữ bản gốc ở túi riêng, không mang theo khi không cần.","Lưu sẵn số Đại sứ quán Việt Nam và contact FPTU trong điện thoại."],
+      "during":["Giữ bình tĩnh, quay lại nơi lưu trú và lần lại lộ trình.","Báo ngay FPTU/FPT Software supervisor và WCC.","Trình báo PNP để có biên bản mất; liên hệ Đại sứ quán Việt Nam để được hướng dẫn thủ tục giấy tờ thay thế."],
+      "contacts":["911/117 theo bản chất sự việc; nếu nghi bị trộm, trình báo PNP.","Đại sứ quán Việt Nam tại Philippines (xem tab Emergency để lấy số đã xác minh).","FPTU OJT: 0901 377 317 / thuvh3@fe.edu.vn."],
+      "source":"https://vnembassy-manila.mofa.gov.vn/lien-he","sourceLabel":"Đại sứ quán Việt Nam tại Philippines – Liên hệ","verifiedDate":"2026-11-27"
+    }
+  ]
+}

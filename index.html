@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1016">
+<meta name="description" content="DTH – Philippines Personal Survival Dashboard: bản đồ, an toàn, di chuyển, y tế, ngân sách và tiếng Anh sinh tồn cho sinh viên Việt Nam tại Metro Manila.">
+<title>DTH · Philippines Survival Dashboard</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/icon.svg">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+<svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z"/><path d="M9 3v15M15 6v15"/></symbol>
+  <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="4"/><path d="M5 10h14M8 21l2-4M16 21l-2-4M9 14h.01M15 14h.01"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2l2.4-8H6"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></symbol>
+  <symbol id="i-siren" viewBox="0 0 24 24"><path d="M12 9a3 3 0 013 3v3H9v-3a3 3 0 013-3zM9 15h6M12 6V4M5 8l1.5 1.5M19 8l-1.5 1.5M5 20h14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5z"/><path d="M8 9h8M8 12h5"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 6h6L7 7zM17 7l-3 6h6l-3-6zM8 21h8"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-10a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5-8 10-8 10z"/><path d="M12 8v5M9.5 10.5h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 12l3 3 5-6"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7h15a3 3 0 013 3v8H3V7zM3 7V5h14M17 13h2"/></symbol>
+</svg>
+
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">DTH</span>
+      <span class="brand-text"><strong>Philippines Survival</strong><small>Personal dashboard · 8 weeks</small></span>
+    </div>
+    <div class="topbar-right">
+      <div class="clock-chip" title="Giờ Philippines (PHT, UTC+8)">
+        <span class="dot live"></span>
+        <span id="ph-clock">--:--</span><small>PHT</small>
+      </div>
+      <button class="sos-btn" id="top-sos" type="button" aria-label="Mở trung tâm SOS">SOS</button>
+    </div>
+  </header>
+
+  <div class="offline-banner" id="offline-banner" hidden>⚠️ Bạn đang offline. Dữ liệu đã tải trước vẫn dùng được; bản đồ ô nền cần Internet.</div>
+
+  <aside class="sidebar" aria-label="Điều hướng chính">
+    <nav class="nav" id="nav">
+      <button class="nav-item active" data-view="dashboard" type="button"><svg><use href="#i-grid"/></svg><span>Dashboard</span></button>
+      <button class="nav-item" data-view="safety" type="button"><svg><use href="#i-shield"/></svg><span>Safety Guide</span></button>
+      <button class="nav-item" data-view="map" type="button"><svg><use href="#i-map"/></svg><span>Interactive Map</span></button>
+      <button class="nav-item" data-view="transport" type="button"><svg><use href="#i-train"/></svg><span>Transportation</span></button>
+      <button class="nav-item" data-view="shopping" type="button"><svg><use href="#i-cart"/></svg><span>Daily Shopping</span></button>
+      <button class="nav-item danger" data-view="emergency" type="button"><svg><use href="#i-siren"/></svg><span>Emergency</span></button>
+      <button class="nav-item" data-view="english" type="button"><svg><use href="#i-chat"/></svg><span>English Survival</span></button>
+      <button class="nav-item" data-view="legal" type="button"><svg><use href="#i-scale"/></svg><span>Legal &amp; Rules</span></button>
+      <div class="nav-divider"></div>
+      <button class="nav-item" data-view="tourist" type="button"><svg><use href="#i-compass"/></svg><span>Weekend</span></button>
+      <button class="nav-item" data-view="health" type="button"><svg><use href="#i-heart"/></svg><span>Health</span></button>
+      <button class="nav-item" data-view="checklist" type="button"><svg><use href="#i-wallet"/></svg><span>Checklist &amp; Budget</span></button>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="verified-chip">Cập nhật dữ liệu <strong id="data-date">—</strong></div>
+      <a href="docs/SOURCES.md" target="_blank" rel="noopener">Nguồn &amp; xác minh ↗</a>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="load-error" class="load-error" hidden>
+      <strong>Không tải được dữ liệu địa phương.</strong>
+      <p>Hãy kiểm tra kết nối và tải lại trang. Nếu bạn đang mở file trực tiếp từ máy, hãy dùng máy chủ tĩnh (xem README.md).</p>
+      <button class="btn primary" type="button" onclick="location.reload()">Thử lại</button>
+    </div>
+
+    <!-- ============ DASHBOARD ============ -->
+    <section class="view active" id="view-dashboard" aria-label="Dashboard">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">FPTU · AI · FPT Software Philippines</div>
+          <h1>Chào DTH,<br><span>8 tuần ở Manila.</span></h1>
+          <p>Mọi thứ bạn cần khi đang đứng ngoài đường: địa điểm, lộ trình, số khẩn cấp và câu tiếng Anh để xin giúp đỡ. Ưu tiên dùng bằng điện thoại.</p>
+          <div class="hero-actions">
+            <button class="btn danger lg" data-go="emergency" type="button">Mở SOS ngay</button>
+            <button class="btn primary lg" data-go="map" type="button">Mở bản đồ</button>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-stat">
+            <span>Giờ Philippines</span>
+            <strong id="dash-clock">--:--:--</strong>
+            <small id="dash-date">—</small>
+          </div>
+          <div class="hero-stat" id="weather-box">
+            <span>Thời tiết Manila</span>
+            <strong id="weather-temp">—</strong>
+            <small id="weather-desc">Đang tải từ Open-Meteo…</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-strip" id="dash-alerts"></div>
+
+      <div class="section-head"><div><div class="eyebrow">Điểm neo</div><h2>2 địa điểm quan trọng nhất</h2></div></div>
+      <div class="grid two" id="anchor-cards"></div>
+
+      <div class="section-head"><div><div class="eyebrow">Tra cứu nhanh</div><h2>Gần bạn nhất</h2></div><button class="link-btn" data-go="map" type="button">Xem tất cả →</button></div>
+      <div class="grid four" id="nearest-cards"></div>
+
+      <div class="grid two mt">
+        <article class="card">
+          <div class="card-head"><h3>Số cần nhớ</h3><span class="badge verified">Đã xác minh</span></div>
+          <div id="dash-contacts" class="quick-contacts"></div>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>3 việc hôm nay</h3><span class="badge subtle">Lưu trên thiết bị</span></div>
+          <div id="dash-tasks"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SAFETY ============ -->
+    <section class="view" id="view-safety" aria-label="Safety Guide">
+      <div class="section-head"><div><div class="eyebrow">Module B</div><h1>Safety Guide</h1><p>Nhận biết rủi ro theo hoàn cảnh cụ thể. Không gán nhãn nguy hiểm cho cả khu phố khi thiếu nguồn đáng tin cậy.</p></div></div>
+      <div class="level-legend">
+        <span class="lvl low">LOW</span><span>Bình thường, vẫn chú ý</span>
+        <span class="lvl caution">CAUTION</span><span>Có yếu tố cần cảnh giác</span>
+        <span class="lvl high">HIGH</span><span>Có nguy cơ cụ thể, đã có nguồn</span>
+        <span class="lvl emergency">EMERGENCY</span><span>Cần xử lý ngay</span>
+      </div>
+      <div class="section-head compact"><div><h2>Cảnh báo địa phương</h2><p>Mỗi cảnh báo có ngày công bố, phạm vi và nguồn.</p></div></div>
+      <div id="safety-alerts" class="stack"></div>
+      <div class="section-head compact"><div><h2>12 tình huống cần nhận biết</h2></div><input class="search" id="safety-search" type="search" placeholder="Tìm tình huống…" aria-label="Tìm tình huống an toàn"></div>
+      <div id="safety-list" class="stack"></div>
+    </section>
+
+    <!-- ============ MAP ============ -->
+    <section class="view" id="view-map" aria-label="Interactive Map">
+      <div class="section-head"><div><div class="eyebrow">Module A</div><h1>Interactive Map</h1><p>Leaflet + OpenStreetMap, không cần API key. Chỉ hiển thị địa điểm có nguồn; ô trống nghĩa là chưa xác minh.</p></div></div>
+      <div class="map-layout">
+        <div class="map-controls card">
+          <input class="search" id="map-search" type="search" placeholder="Tìm tên địa điểm…" aria-label="Tìm địa điểm">
+          <div class="filter-group"><label>Gốc tính</label><div class="chips" id="anchor-chips"></div></div>
+          <div class="filter-group"><label>Bán kính</label><div class="chips" id="radius-chips"></div></div>
+          <label class="switch-row"><input type="checkbox" id="open-now"><span>Chỉ đang mở cửa <small>(chỉ khi có giờ đáng tin)</small></span></label>
+          <div class="filter-group"><label>Danh mục</label><div class="chips wrap" id="category-chips"></div></div>
+          <div class="map-meta"><span id="map-count">—</span><button class="link-btn" id="locate-btn" type="button">📍 Vị trí của tôi (xin phép)</button></div>
+        </div>
+        <div class="map-stage">
+          <div id="map"></div>
+          <div id="place-panel" class="place-panel" hidden></div>
+        </div>
+      </div>
+      <div class="section-head compact"><div><h2>Danh sách kết quả</h2><p>Khoảng cách được tính đường thẳng (Haversine) từ điểm neo — không phải quãng đường đi bộ.</p></div></div>
+      <div id="map-list" class="grid three"></div>
+    </section>
+
+    <!-- ============ TRANSPORT ============ -->
+    <section class="view" id="view-transport" aria-label="Transportation">
+      <div class="section-head"><div><div class="eyebrow">Module D</div><h1>Đi lại WCC → FPT Software</h1><p>Lộ trình và giá vé đối chiếu nguồn chính thức. Mọi con số đều có ngày xác minh.</p></div></div>
+      <div id="transport-status" class="notice"></div>
+      <div class="section-head compact"><div><h2>Tuyến chính (đã xác minh)</h2></div><a class="link-btn" id="route-map-link" href="#" target="_blank" rel="noopener">Mở chỉ đường Google Maps ↗</a></div>
+      <div id="route-steps" class="timeline"></div>
+      <div class="grid two mt">
+        <article class="card">
+          <div class="card-head"><h3>Bảng giá vé</h3></div>
+          <div id="fare-table"></div>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Tính chi phí 40 ngày</h3></div>
+          <div id="fare-calc"></div>
+        </article>
+      </div>
+      <div class="section-head compact"><div><h2>Phương án khác</h2></div></div>
+      <div id="transport-alternatives" class="grid three"></div>
+      <div id="transport-sources" class="source-list"></div>
+    </section>
+
+    <!-- ============ SHOPPING ============ -->
+    <section class="view" id="view-shopping" aria-label="Daily Shopping">
+      <div class="section-head"><div><div class="eyebrow">Module E</div><h1>Daily Shopping</h1><p>Giặt ủi, thuốc, tạp hóa, SIM, đồ dùng — lọc theo khu vực ký túc xá hoặc văn phòng.</p></div></div>
+      <div class="filter-group"><label>Khu vực</label><div class="chips" id="shop-anchor-chips"></div></div>
+      <div id="shop-places" class="grid three mt"></div>
+      <div class="section-head compact"><div><h2>Đồ cần mua</h2><p>Tích vào từng mục; trạng thái được lưu trên thiết bị của bạn.</p></div><button class="btn ghost sm" id="reset-buy" type="button">Xóa tất cả</button></div>
+      <div id="buy-lists" class="grid four"></div>
+    </section>
+
+    <!-- ============ EMERGENCY ============ -->
+    <section class="view" id="view-emergency" aria-label="Emergency">
+      <div class="emergency-hero">
+        <div><div class="eyebrow">Module H · SOS</div><h1>Khi cần giúp ngay</h1><p>Gọi trước, giải thích sau. Nhấn một nút để gọi số đã xác minh.</p></div>
+        <a class="sos-call" href="tel:911">Gọi 911</a>
+      </div>
+      <div id="emergency-contacts" class="grid three"></div>
+      <div class="section-head compact"><div><h2>Xử lý nhanh</h2></div></div>
+      <div id="emergency-procedures" class="grid three"></div>
+      <div class="notice">⚠️ Chỉ gọi 911 trong trường hợp đe dọa tính mạng hoặc cần cứu khẩn cấp. Với trình báo tài sản nhỏ, dùng số của PNP/đồn cảnh sát.</div>
+    </section>
+
+    <!-- ============ ENGLISH ============ -->
+    <section class="view" id="view-english" aria-label="English Survival">
+      <div class="section-head"><div><div class="eyebrow">Module G</div><h1>English Survival</h1><p>Câu ngắn, dễ nhớ, có phát âm đơn giản. Nhấn 🔊 để nghe (Web Speech API) và ⧉ để copy.</p></div></div>
+      <div class="filter-group"><label>Chủ đề</label><div class="chips wrap" id="english-chips"></div></div>
+      <div id="english-list" class="grid two mt"></div>
+      <div class="section-head compact"><div><h2>Tagalog cơ bản</h2><p>Chỉ vài từ để nhận biết khi nghe thấy — không bắt buộc học.</p></div></div>
+      <div id="tagalog-list" class="grid four"></div>
+    </section>
+
+    <!-- ============ LEGAL ============ -->
+    <section class="view" id="view-legal" aria-label="Legal & Local Rules">
+      <div class="section-head"><div><div class="eyebrow">Module C</div><h1>Pháp lý &amp; quy định địa phương</h1><p>Mục tiêu: tránh hiểu lầm và ứng xử đúng khi làm việc với cơ quan chức năng. Không có hướng dẫn né tránh kiểm tra hay che giấu vi phạm.</p></div></div>
+      <div class="grid two" id="legal-sections"></div>
+      <div class="section-head compact"><div><h2>Checklist giấy tờ</h2><p>Lưu bản sao số (Ảnh/chụp màn hình) ở nơi riêng tư. Không tải hộ chiếu thật lên website này.</p></div></div>
+      <div id="doc-checklist" class="grid three"></div>
+      <div id="legal-sources" class="source-list"></div>
+    </section>
+
+    <!-- ============ TOURIST ============ -->
+    <section class="view" id="view-tourist" aria-label="Weekend exploration">
+      <div class="section-head"><div><div class="eyebrow">Module F</div><h1>Weekend Exploration</h1><p>Địa điểm trong tầm ~30 km. Giờ mở cửa chỉ hiển thị khi có nguồn cập nhật.</p></div></div>
+      <div class="filter-group"><label>Lọc</label><div class="chips wrap" id="tourist-chips"></div></div>
+      <div id="tourist-list" class="grid three mt"></div>
+    </section>
+
+    <!-- ============ HEALTH ============ -->
+    <section class="view" id="view-health" aria-label="Medical & health">
+      <div class="section-head"><div><div class="eyebrow">Module I</div><h1>Bệnh viện · Phòng khám · Nhà thuốc</h1><p>Thông tin chỉ để tìm nơi đến. Website này không chẩn đoán hay kê đơn — trong trường hợp y tế khẩn cấp, gọi 911.</p></div></div>
+      <div class="filter-group"><label>Nhóm</label><div class="chips wrap" id="health-chips"></div></div>
+      <div id="health-list" class="grid three mt"></div>
+    </section>
+
+    <!-- ============ CHECKLIST & BUDGET ============ -->
+    <section class="view" id="view-checklist" aria-label="Checklist and budget">
+      <div class="section-head"><div><div class="eyebrow">Module J</div><h1>Checklist 8 tuần &amp; ngân sách</h1><p>Tích vào checklist và nhập chi phí — mọi thứ lưu trong localStorage trên máy bạn, không gửi đi đâu.</p></div></div>
+      <div id="checklist-groups" class="grid three"></div>
+      <div class="section-head compact"><div><h2>Budget calculator</h2><p>Tỷ giá do bạn tự nhập (mặc định chỉ là ví dụ, không phải giá thị trường).</p></div></div>
+      <div class="grid two">
+        <article class="card">
+          <div class="card-head"><h3>Nhập chi phí</h3></div>
+          <div id="budget-inputs" class="form-grid"></div>
+        </article>
+        <article class="card">
+          <div class="card-head"><h3>Tổng hợp</h3></div>
+          <div id="budget-summary"></div>
+        </article>
+      </div>
+      <p class="fineprint">Dữ liệu cá nhân (checklist, budget) chỉ nằm trong trình duyệt của bạn. Không nhập số hộ chiếu, mật khẩu, mã OTP hay thông tin ngân hàng vào đây.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>DTH · Philippines Personal Survival Dashboard</span>
+    <span>Nguồn: cơ quan chính thức · OSM · đối chiếu Google Maps · <a href="docs/SOURCES.md" target="_blank" rel="noopener">SOURCES.md</a></span>
+    <span>Dữ liệu cập nhật: <strong id="footer-date">—</strong></span>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

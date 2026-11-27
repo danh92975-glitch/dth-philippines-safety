@@ -1,0 +1,33 @@
+{
+  "dataDate": "2026-11-27",
+  "dashboardTasks": [
+    {"text":"Xác định đúng cổng ký túc xá WCC trước ngày đầu đi làm","view":"transport"},
+    {"text":"Lưu 911 và số PNP vào danh bạ điện thoại","view":"emergency"},
+    {"text":"Lưu 2 điểm neo (WCC, FPT Software) vào Google Maps","view":"map"}
+  ],
+  "groups": [
+    {
+      "title":"BEFORE DEPARTURE",
+      "items":["Passport (còn hạn ≥ 6 tháng)","Visa / giấy tờ nhập cảnh hợp lệ","Flight tickets","Internship acceptance letter (FPTU)","Thư tiếp nhận của FPT Software Philippines","Accommodation confirmation (WCC)","Travel insurance","Danh sách liên hệ khẩn cấp","SIM / eSIM plan","Bản sao giấy tờ lưu riêng (không upload công khai)"]
+    },
+    {
+      "title":"FIRST DAY",
+      "items":["Xác định cổng vào ký túc xá","Tìm siêu thị gần nhất","Tìm hiệu thuốc gần nhất","Tìm ga LRT-2 gần nhất","Lưu địa chỉ công ty trên bản đồ","Lưu số khẩn cấp vào điện thoại","Đi thử một lần toàn bộ lộ trình","Mua thẻ Beep nếu dùng tàu thường xuyên"]
+    },
+    {
+      "title":"WEEKLY",
+      "items":["Kiểm tra ngân sách","Kiểm tra điện thoại & SIM","Giặt quần áo","Bổ sung đồ dùng cá nhân","Kiểm tra lịch thực tập với supervisor","Sao lưu ảnh giấy tờ vào nơi riêng tư","Kiểm tra giờ tàu / thông báo mới"]
+    }
+  ],
+  "docs": [
+    "Passport","Visa hoặc giấy tờ nhập cảnh hợp lệ","Thư xác nhận thực tập của FPTU","Thư xác nhận tiếp nhận của FPT Software",
+    "Student ID","Thẻ nhân viên hoặc giấy xác nhận OJT","Địa chỉ ký túc xá","Số liên hệ người phụ trách tại Philippines",
+    "Bảo hiểm du lịch / bảo hiểm y tế","Bản sao giấy tờ quan trọng"
+  ],
+  "buy": [
+    {"title":"PERSONAL CARE","items":["Toothbrush","Toothpaste","Shampoo","Body wash","Deodorant","Toilet paper","Wet wipes"]},
+    {"title":"HOUSEHOLD","items":["Laundry detergent","Clothes hangers","Trash bags","Mosquito repellent","Umbrella","Slippers"]},
+    {"title":"FOOD","items":["Bottled water","Bread","Milk","Eggs","Rice","Instant noodles","Snacks"]},
+    {"title":"ELECTRONICS","items":["Phone charger","Power bank","Universal travel adapter","SIM card","Earphones"]}
+  ]
+}

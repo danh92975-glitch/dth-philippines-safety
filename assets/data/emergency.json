@@ -1,0 +1,110 @@
+{
+  "dataDate": "2026-11-27",
+  "contacts": [
+    {
+      "name":"911","role":"Tổng đài khẩn cấp quốc gia (cảnh sát / cứu hỏa / cấp cứu)","number":"911",
+      "critical":true,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Dùng khi có nguy cơ tính mạng. Đây là số thống nhất toàn quốc.",
+      "source":"https://ncr.dilg.gov.ph/dilg-leads-nationwide-campaign-for-unified-911-emergency-hotline"
+    },
+    {
+      "name":"PNP 117","role":"Cảnh sát quốc gia Philippines – trình báo tội phạm","number":"117",
+      "critical":true,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Gọi để trình báo mất tài sản, lừa đảo, xác minh nhân viên chức năng.",
+      "source":"https://ph.usembassy.gov/contact"
+    },
+    {
+      "name":"PNP – đường dây văn phòng","role":"Số dự phòng khi gọi 117 không kết nối","number":"(02) 8722-0650",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Được Đại sứ quán Hoa Kỳ tại Philippines niêm yết.",
+      "source":"https://ph.usembassy.gov/contact"
+    },
+    {
+      "name":"PNP text hotline","role":"Nhắn tin trình báo (không gọi)","number":"2920",
+      "critical":false,"verified":false,"verifiedDate":"2026-11-27",
+      "note":"Nguồn chính thức ghi 'text 2920'; đây là kênh SMS, không phải số gọi thoại.",
+      "source":"https://acg.pnp.gov.ph/main/press-releases/233-acg-operatives-rescue-minors-trafficked-by-their-own-sister"
+    },
+    {
+      "name":"Philippine Red Cross","role":"Hỗ trợ y tế / cứu trợ","number":"143",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Số hottestline được Đại sứ quán Hoa Kỳ niêm yết.",
+      "source":"https://ph.usembassy.gov/contact"
+    },
+    {
+      "name":"BFP – số không khẩn cấp","role":"Cứu hỏa (ngoài giờ khẩn cấp)","number":"(02) 8426-0219",
+      "critical":false,"verified":false,"verifiedDate":"2026-11-27",
+      "note":"Có mâu thuẫn giữa nguồn chính thức: (02) 8426-0219 / (02) 8426-0246 / (02) 8426-3812. CHÁY: gọi 911.",
+      "source":"https://bfp.gov.ph/contact-us/"
+    },
+    {
+      "name":"Đại sứ quán Việt Nam","role":"Bảo hộ công dân · hộ chiếu mất · hỗ trợ lãnh sự","number":"+63-28-5216843",
+      "critical":true,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"670 Pablo Ocampo, Malate, Manila. Email vnembph@mofa.gov.vn. Số nóng sau giờ làm việc CHƯA được xác minh.",
+      "mapQuery":"670 Pablo Ocampo Street, Malate, Manila",
+      "website":"https://vnembassy-manila.mofa.gov.vn/lien-he",
+      "source":"https://vnembassy-manila.mofa.gov.vn/lien-he"
+    },
+    {
+      "name":"Bảo hộ công dân (MFA Việt Nam)","role":"Tổng đài bảo hộ công dân — không riêng Philippines","number":"+84 981 84 84 84",
+      "critical":false,"verified":false,"verifiedDate":"2026-11-27",
+      "note":"Hiện trên trang chủ Đại sứ quán; KHÔNG phải số riêng của ĐSQ tại Philippines. Dùng khi không liên hệ được ĐSQ.",
+      "source":"https://vnembassy-manila.mofa.gov.vn/"
+    },
+    {
+      "name":"FPTU – đầu mối OJT","role":"Chương trình OJT Philippines (thông báo 18/08/2026)","number":"0901 377 317",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Email: thuvh3@fe.edu.vn. Đây là đầu mối chương trình, không phải số văn phòng FPT Software.",
+      "source":"https://daihoc.fpt.edu.vn/en/hm/officially-install-it-in-the-philippines-in-fall-2026/"
+    },
+    {
+      "name":"FPTU – email chung","role":"Liên hệ trường chính thức","number":"truongdaihocfpt@fpt.edu.vn",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Email liên hệ chung trên trang chính thức FPTU.",
+      "source":"https://daihoc.fpt.edu.vn/en/"
+    },
+    {
+      "name":"FPT Software – văn phòng Manila","role":"Số văn phòng công bố trên trang Global Presence","number":"+63 32 410 6857",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Suite A, Level 14, Robinsons Summit Center. Email vudta@fpt.com; máy lẻ (58).",
+      "mapQuery":"Robinsons Summit Center, 6783 Ayala Avenue, Makati",
+      "source":"https://fptsoftware.com/about-us/global-presence"
+    },
+    {
+      "name":"FPT Software – supervisor","role":"Người phụ trách trực tiếp tại công ty","number":"Chưa xác minh",
+      "critical":false,"verified":false,"verifiedDate":"2026-11-27",
+      "note":"KHÔNG tự điền. Hãy lấy số/email từ thư tiếp nhận OJT hoặc email nội bộ trước ngày đầu đi làm.",
+      "source":null
+    },
+    {
+      "name":"WCC – ký túc xá","role":"Xác nhận cổng vào & hỗ trợ lưu trú","number":"(02) 3-438-4580",
+      "critical":false,"verified":true,"verifiedDate":"2026-11-27",
+      "note":"Số dự phòng: 0917-596-8545. Trang chính thức ghi ký túc cách campus vài bước nhưng không nêu cổng riêng.",
+      "mapQuery":"World Citi Colleges, Aurora Boulevard, Quezon City",
+      "source":"https://www.worldciti.edu.ph/facilities/student-dormitory"
+    },
+    {
+      "name":"Bảo hiểm du lịch / y tế","role":"Hotline công ty bảo hiểm của bạn","number":"Chưa xác minh",
+      "critical":false,"verified":false,"verifiedDate":"2026-11-27",
+      "note":"KHÔNG tự điền. Lưu số hotline từ thẻ bảo hiểm hoặc email xác nhận trước khi bay.",
+      "source":null
+    }
+  ],
+  "procedures": [
+    {
+      "title":"KHI MẤT HỘ CHIẾU","verified":true,"verifiedDate":"2026-11-27",
+      "steps":["Giữ bình tĩnh; kiểm tra lại túi, phòng trọ và toàn bộ hành trình hôm nay.","Báo ngay FPTU OJT (0901 377 317) và supervisor FPT Software; báo WCC nếu mất trong ký túc.","Trình báo PNP (117) để có biên bản mất tài sản/giấy tờ.","Liên hệ Đại sứ quán Việt Nam (+63-28-5216843) theo hướng dẫn làm giấy tờ thay thế.","Không đăng ảnh hộ chiếu hay số hộ chiếu lên mạng; chỉ lưu bản sao ở nơi riêng tư."],
+      "source":"https://travel.state.gov/en/international-travel/travel-advisories/philippines.html"
+    },
+    {
+      "title":"KHI BỊ CƯỚP","verified":true,"verifiedDate":"2026-11-27",
+      "steps":["Không chống trả nếu có nguy cơ bị thương; ưu tiên rời khỏi hiện trường.","Di chuyển đến nơi công cộng sáng sủng, có bảo vệ hoặc nhân viên cửa hàng.","Gọi 911 nếu bị thương/đe dọa; gọi 117 để trình báo tài sản.","Khóa SIM qua nhà mạng và khóa thiết bị/tài khoản bằng thiết bị khác.","Liên hệ FPTU/FPT Software; ghi lại thời gian, địa điểm và mô tả để làm biên bản."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+      "title":"KHI BỊ LẠC","verified":true,"verifiedDate":"2026-11-27",
+      "steps":["Dừng lại, hít sâu và di chuyển vào nơi công cộng sáng sủng (cửa hàng, sảnh ga, quầy thông tin).","Tìm bảo vệ, nhân viên ga hoặc quầy thông tin chính thức để hỏi đường.","Mở bản đồ trong ứng dụng này hoặc Google Maps để định vị (không cần chia sẻ vị trí với người lạ).","Gọi/ nhắn cho người phụ trách FPTU hoặc WCC; lưu địa chỉ công ty bằng tiếng Anh.","Không đi theo người lạ tới địa điểm riêng tư, kể cả khi họ nói sẽ đưa bạn về ký túc."],
+      "source":"https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    }
+  ]
+}
